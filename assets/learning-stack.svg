@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 600" width="780" height="600" role="img" aria-label="The AI learning stack: pyramid from Python at the base to Deployment at the top">
+  <defs>
+    <linearGradient id="stackBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f8fafc"/>
+      <stop offset="100%" stop-color="#e2e8f0"/>
+    </linearGradient>
+    <filter id="lift" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feOffset dx="0" dy="2" result="offset"/>
+      <feMerge>
+        <feMergeNode in="offset"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="780" height="600" fill="url(#stackBg)" rx="12"/>
+
+  <text x="390" y="52" text-anchor="middle" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif" font-size="16" font-style="italic" fill="#475569">
+    Each layer builds on the one below. Do not skip levels.
+  </text>
+
+  <g filter="url(#lift)">
+    <polygon points="265,110 515,110 552.5,180 227.5,180" fill="#22c55e" stroke="#15803d" stroke-width="1.5">
+      <animate attributeName="fill" values="#22c55e;#4ade80;#22c55e" dur="6s" begin="5s" repeatCount="indefinite"/>
+    </polygon>
+    <text x="390" y="152" text-anchor="middle" font-family="ui-sans-serif, system-ui" font-size="16" font-weight="800" fill="#fff">
+      Deployment &#8226; APIs &#8226; Portfolio
+    </text>
+  </g>
+
+  <g filter="url(#lift)">
+    <polygon points="227.5,180 552.5,180 590,250 190,250" fill="#f97316" stroke="#c2410c" stroke-width="1.5">
+      <animate attributeName="fill" values="#f97316;#fb923c;#f97316" dur="6s" begin="4s" repeatCount="indefinite"/>
+    </polygon>
+    <text x="390" y="222" text-anchor="middle" font-family="ui-sans-serif, system-ui" font-size="16" font-weight="800" fill="#fff">
+      RAG &#8226; Agents &#8226; Vector DBs &#8226; Evals
+    </text>
+  </g>
+
+  <g filter="url(#lift)">
+    <polygon points="190,250 590,250 627.5,320 152.5,320" fill="#ec4899" stroke="#be185d" stroke-width="1.5">
+      <animate attributeName="fill" values="#ec4899;#f472b6;#ec4899" dur="6s" begin="3s" repeatCount="indefinite"/>
+    </polygon>
+    <text x="390" y="292" text-anchor="middle" font-family="ui-sans-serif, system-ui" font-size="16" font-weight="800" fill="#fff">
+      LLMs &#8226; Transformers &#8226; Prompting &#8226; Fine-tuning
+    </text>
+  </g>
+
+  <g filter="url(#lift)">
+    <polygon points="152.5,320 627.5,320 665,390 115,390" fill="#8b5cf6" stroke="#6d28d9" stroke-width="1.5">
+      <animate attributeName="fill" values="#8b5cf6;#a78bfa;#8b5cf6" dur="6s" begin="2s" repeatCount="indefinite"/>
+    </polygon>
+    <text x="390" y="362" text-anchor="middle" font-family="ui-sans-serif, system-ui" font-size="16" font-weight="800" fill="#fff">
+      Deep Learning &#8226; PyTorch &#8226; Neural networks
+    </text>
+  </g>
+
+  <g filter="url(#lift)">
+    <polygon points="115,390 665,390 702.5,460 77.5,460" fill="#10b981" stroke="#047857" stroke-width="1.5">
+      <animate attributeName="fill" values="#10b981;#34d399;#10b981" dur="6s" begin="1s" repeatCount="indefinite"/>
+    </polygon>
+    <text x="390" y="432" text-anchor="middle" font-family="ui-sans-serif, system-ui" font-size="16" font-weight="800" fill="#fff">
+      Machine Learning &#8226; scikit-learn &#8226; Evaluation
+    </text>
+  </g>
+
+  <g filter="url(#lift)">
+    <polygon points="77.5,460 702.5,460 740,530 40,530" fill="#3b82f6" stroke="#1e40af" stroke-width="1.5">
+      <animate attributeName="fill" values="#3b82f6;#60a5fa;#3b82f6" dur="6s" begin="0s" repeatCount="indefinite"/>
+    </polygon>
+    <text x="390" y="502" text-anchor="middle" font-family="ui-sans-serif, system-ui" font-size="16" font-weight="800" fill="#fff">
+      Python &#8226; NumPy &#8226; Pandas &#8226; Math intuition
+    </text>
+  </g>
+
+  <g font-family="ui-sans-serif, system-ui" font-size="11" fill="#64748b">
+    <text x="750" y="145" text-anchor="end">Month 6</text>
+    <text x="750" y="215" text-anchor="end">Month 5</text>
+    <text x="750" y="285" text-anchor="end">Month 4</text>
+    <text x="750" y="355" text-anchor="end">Month 3</text>
+    <text x="750" y="425" text-anchor="end">Month 2</text>
+    <text x="750" y="495" text-anchor="end">Month 1</text>
+  </g>
+
+  <text x="390" y="572" text-anchor="middle" font-family="ui-sans-serif, system-ui" font-size="12" fill="#94a3b8">
+    Skipping layers is why most self-taught journeys fail. This roadmap never skips.
+  </text>
+</svg>

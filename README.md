@@ -2,6 +2,8 @@
 
 <img src="assets/hero.svg" alt="6-Month AI Engineer Roadmap" width="100%" />
 
+<img src="assets/phase-progression.svg" alt="Phase progression: Foundations to Machine Learning to Deep Learning to LLMs to RAG & Agents to Deploy & Portfolio" width="100%" />
+
 ### **From Python to production AI in 26 weeks. Free. Structured. Project-first.**
 
 *A public learning path for anyone who wants to become a hireable AI Engineer without paying a bootcamp $15k for what free resources already teach better.*
@@ -170,22 +172,9 @@ flowchart LR
 
 AI is a stack, not a menu. Skipping layers is why most self-taught journeys fail.
 
-```mermaid
-flowchart BT
-    L1["🐍 <b>Python</b> • NumPy • Pandas • Math intuition"]
-    L2["📈 <b>Machine Learning</b> • scikit-learn • Evaluation"]
-    L3["🧠 <b>Deep Learning</b> • PyTorch • Neural networks"]
-    L4["💬 <b>LLMs</b> • Transformers • Prompting • Fine-tuning"]
-    L5["🔎 <b>RAG • Agents</b> • Vector DBs • Evals"]
-    L6["🚀 <b>Deployment</b> • APIs • Portfolio"]
-    L1 --> L2 --> L3 --> L4 --> L5 --> L6
-    style L1 fill:#3b82f6,color:#fff
-    style L2 fill:#10b981,color:#fff
-    style L3 fill:#8b5cf6,color:#fff
-    style L4 fill:#ec4899,color:#fff
-    style L5 fill:#f59e0b,color:#fff
-    style L6 fill:#22c55e,color:#fff
-```
+<p align="center">
+  <img src="assets/learning-stack.svg" alt="Learning stack pyramid: Python at the base, Machine Learning, Deep Learning, LLMs, RAG & Agents, Deployment at the top" width="70%" />
+</p>
 
 ### Every phase gives you 4 things
 

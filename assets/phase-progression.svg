@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 340" width="1400" height="340" role="img" aria-label="6-month phase progression from Foundations to Deploy">
+  <defs>
+    <linearGradient id="ppbg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f8fafc"/>
+      <stop offset="100%" stop-color="#eef2f7"/>
+    </linearGradient>
+    <filter id="chevShadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#0f172a" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <rect width="1400" height="340" fill="url(#ppbg)" rx="12"/>
+
+  <text x="40" y="45" font-family="ui-sans-serif, system-ui, sans-serif" font-size="14" font-weight="800" fill="#0f172a" letter-spacing="1">
+    START HERE
+  </text>
+  <text x="146" y="45" font-family="ui-sans-serif, system-ui, sans-serif" font-size="14" font-weight="800" fill="#0f172a">&#8595;</text>
+
+  <text x="1360" y="45" text-anchor="end" font-family="ui-sans-serif, system-ui, sans-serif" font-size="14" font-weight="800" fill="#22c55e" letter-spacing="1">
+    &#8593; AI ENGINEER (job-ready)
+  </text>
+
+  <text x="135" y="90" text-anchor="middle" font-family="ui-sans-serif, system-ui" font-size="14" font-weight="800" fill="#3b82f6" letter-spacing="1">MONTH 1</text>
+  <line x1="135" y1="100" x2="135" y2="115" stroke="#3b82f6" stroke-width="2"/>
+  <text x="310" y="90" text-anchor="middle" font-family="ui-sans-serif, system-ui" font-size="14" font-weight="800" fill="#10b981" letter-spacing="1">MONTH 2</text>
+  <line x1="310" y1="100" x2="310" y2="115" stroke="#10b981" stroke-width="2"/>
+  <text x="485" y="90" text-anchor="middle" font-family="ui-sans-serif, system-ui" font-size="14" font-weight="800" fill="#8b5cf6" letter-spacing="1">MONTH 3</text>
+  <line x1="485" y1="100" x2="485" y2="115" stroke="#8b5cf6" stroke-width="2"/>
+  <text x="660" y="90" text-anchor="middle" font-family="ui-sans-serif, system-ui" font-size="14" font-weight="800" fill="#ec4899" letter-spacing="1">MONTH 4</text>
+  <line x1="660" y1="100" x2="660" y2="115" stroke="#ec4899" stroke-width="2"/>
+  <text x="835" y="90" text-anchor="middle" font-family="ui-sans-serif, system-ui" font-size="14" font-weight="800" fill="#f97316" letter-spacing="1">MONTH 5</text>
+  <line x1="835" y1="100" x2="835" y2="115" stroke="#f97316" stroke-width="2"/>
+  <text x="1010" y="90" text-anchor="middle" font-family="ui-sans-serif, system-ui" font-size="14" font-weight="800" fill="#22c55e" letter-spacing="1">MONTH 6</text>
+  <line x1="1010" y1="100" x2="1010" y2="115" stroke="#22c55e" stroke-width="2"/>
+
+  <g filter="url(#chevShadow)">
+    <polygon points="40,120 205,120 235,185 205,250 40,250 70,185" fill="#3b82f6"/>
+    <text x="130" y="180" text-anchor="middle" font-family="ui-sans-serif, system-ui" font-size="19" font-weight="800" fill="#fff">Foundations</text>
+  </g>
+  <g filter="url(#chevShadow)">
+    <polygon points="215,120 380,120 410,185 380,250 215,250 245,185" fill="#10b981"/>
+    <text x="305" y="170" text-anchor="middle" font-family="ui-sans-serif, system-ui" font-size="18" font-weight="800" fill="#fff">Machine</text>
+    <text x="305" y="192" text-anchor="middle" font-family="ui-sans-serif, system-ui" font-size="18" font-weight="800" fill="#fff">Learning</text>
+  </g>
+  <g filter="url(#chevShadow)">
+    <polygon points="390,120 555,120 585,185 555,250 390,250 420,185" fill="#8b5cf6"/>
+    <text x="480" y="170" text-anchor="middle" font-family="ui-sans-serif, system-ui" font-size="18" font-weight="800" fill="#fff">Deep</text>
+    <text x="480" y="192" text-anchor="middle" font-family="ui-sans-serif, system-ui" font-size="18" font-weight="800" fill="#fff">Learning</text>
+  </g>
+  <g filter="url(#chevShadow)">
+    <polygon points="565,120 730,120 760,185 730,250 565,250 595,185" fill="#ec4899"/>
+    <text x="655" y="170" text-anchor="middle" font-family="ui-sans-serif, system-ui" font-size="18" font-weight="800" fill="#fff">LLMs &amp;</text>
+    <text x="655" y="192" text-anchor="middle" font-family="ui-sans-serif, system-ui" font-size="18" font-weight="800" fill="#fff">Transformers</text>
+  </g>
+  <g filter="url(#chevShadow)">
+    <polygon points="740,120 905,120 935,185 905,250 740,250 770,185" fill="#f97316"/>
+    <text x="830" y="170" text-anchor="middle" font-family="ui-sans-serif, system-ui" font-size="18" font-weight="800" fill="#fff">RAG &amp;</text>
+    <text x="830" y="192" text-anchor="middle" font-family="ui-sans-serif, system-ui" font-size="18" font-weight="800" fill="#fff">Agents</text>
+  </g>
+  <g filter="url(#chevShadow)">
+    <polygon points="915,120 1080,120 1110,185 1080,250 915,250 945,185" fill="#22c55e"/>
+    <text x="1005" y="170" text-anchor="middle" font-family="ui-sans-serif, system-ui" font-size="18" font-weight="800" fill="#fff">Deploy &amp;</text>
+    <text x="1005" y="192" text-anchor="middle" font-family="ui-sans-serif, system-ui" font-size="18" font-weight="800" fill="#fff">Portfolio</text>
+  </g>
+
+  <text x="135" y="290" text-anchor="middle" font-family="ui-sans-serif, system-ui" font-size="13" fill="#64748b">Python + Math</text>
+  <text x="135" y="308" text-anchor="middle" font-family="ui-sans-serif, system-ui" font-size="13" fill="#64748b">for AI</text>
+
+  <text x="305" y="290" text-anchor="middle" font-family="ui-sans-serif, system-ui" font-size="13" fill="#64748b">scikit-learn,</text>
+  <text x="305" y="308" text-anchor="middle" font-family="ui-sans-serif, system-ui" font-size="13" fill="#64748b">first models</text>
+
+  <text x="480" y="290" text-anchor="middle" font-family="ui-sans-serif, system-ui" font-size="13" fill="#64748b">Neural nets,</text>
+  <text x="480" y="308" text-anchor="middle" font-family="ui-sans-serif, system-ui" font-size="13" fill="#64748b">PyTorch</text>
+
+  <text x="655" y="290" text-anchor="middle" font-family="ui-sans-serif, system-ui" font-size="13" fill="#64748b">GPT, Hugging</text>
+  <text x="655" y="308" text-anchor="middle" font-family="ui-sans-serif, system-ui" font-size="13" fill="#64748b">Face, prompts</text>
+
+  <text x="830" y="290" text-anchor="middle" font-family="ui-sans-serif, system-ui" font-size="13" fill="#64748b">Vector DBs,</text>
+  <text x="830" y="308" text-anchor="middle" font-family="ui-sans-serif, system-ui" font-size="13" fill="#64748b">AI apps</text>
+
+  <text x="1005" y="290" text-anchor="middle" font-family="ui-sans-serif, system-ui" font-size="13" fill="#64748b">Ship 3 projects,</text>
+  <text x="1005" y="308" text-anchor="middle" font-family="ui-sans-serif, system-ui" font-size="13" fill="#64748b">interview prep</text>
+</svg>

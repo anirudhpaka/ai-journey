@@ -1,8 +1,23 @@
 # ai-journey
 
-My 6-month journey from Python to shipping production AI systems — following [The 6-Month AI Engineer Roadmap](../AI_Engineer_6_Month_Roadmap_v2.pdf).
+My 6-month journey from Python to shipping production AI systems — following [The 6-Month AI Engineer Roadmap](roadmap.pdf).
 
 **Foundations → Machine Learning → Deep Learning → LLMs → RAG & Agents → Deployment**
+
+```mermaid
+flowchart LR
+    M1["<b>MONTH 1</b><br/>Foundations<br/><i>Python + Math</i>"] --> M2["<b>MONTH 2</b><br/>Machine Learning<br/><i>scikit-learn</i>"]
+    M2 --> M3["<b>MONTH 3</b><br/>Deep Learning<br/><i>PyTorch</i>"]
+    M3 --> M4["<b>MONTH 4</b><br/>LLMs<br/><i>Transformers</i>"]
+    M4 --> M5["<b>MONTH 5</b><br/>RAG & Agents<br/><i>Vector DBs</i>"]
+    M5 --> M6["<b>MONTH 6</b><br/>Deploy & Portfolio<br/><i>Ship 3 projects</i>"]
+    style M1 fill:#3b82f6,color:#fff,stroke:#1e40af
+    style M2 fill:#10b981,color:#fff,stroke:#047857
+    style M3 fill:#8b5cf6,color:#fff,stroke:#6d28d9
+    style M4 fill:#ec4899,color:#fff,stroke:#be185d
+    style M5 fill:#f59e0b,color:#fff,stroke:#b45309
+    style M6 fill:#22c55e,color:#fff,stroke:#15803d
+```
 
 | 26 weeks | 5 days/week | 1–2 hrs/day | ~200 total hours | 3 portfolio projects |
 |---|---|---|---|---|
@@ -11,18 +26,108 @@ My 6-month journey from Python to shipping production AI systems — following [
 
 ---
 
-## Weekly rhythm
+## First: what even is AI?
 
-| Mon | Tue | Wed | Thu | Fri |
-|---|---|---|---|---|
-| Watch / read | Code along | Watch / read | Code along | Build & review |
-| New concept | Reproduce it | Next concept + notes | Exercises / Kaggle | Mini-project + recap |
+Before any course, get the big picture. "AI", "ML", "deep learning", and "LLMs" are not the same thing — they are circles inside circles:
 
-**Weekends fully off.** Consistency beats intensity. Build more than you watch. Done beats perfect.
+```mermaid
+flowchart TB
+    subgraph AI["🌐 ARTIFICIAL INTELLIGENCE — machines doing smart things"]
+      direction TB
+      subgraph ML["📊 MACHINE LEARNING — learning rules from data"]
+        direction TB
+        subgraph DL["🧠 DEEP LEARNING — learning with neural networks"]
+          direction TB
+          LLM["✨ GEN AI / LLMs<br/>models that create<br/>text & images"]
+        end
+      end
+    end
+    style AI fill:#dbeafe,stroke:#3b82f6,color:#1e3a8a
+    style ML fill:#d1fae5,stroke:#10b981,color:#065f46
+    style DL fill:#ede9fe,stroke:#8b5cf6,color:#5b21b6
+    style LLM fill:#fce7f3,stroke:#ec4899,color:#9d174d
+```
+
+### The training loop *is* machine learning
+
+```mermaid
+flowchart LR
+    D["1. DATA<br/>examples to<br/>learn from"] --> G["2. GUESS<br/>model makes a<br/>prediction"]
+    G --> M["3. MEASURE<br/>how wrong<br/>was it? (loss)"]
+    M --> A["4. ADJUST<br/>nudge weights<br/>(gradient descent)"]
+    A --> R["5. REPEAT<br/>thousands of<br/>times → smart"]
+    R -.->|"loop"| D
+    style D fill:#3b82f6,color:#fff
+    style G fill:#10b981,color:#fff
+    style M fill:#8b5cf6,color:#fff
+    style A fill:#f59e0b,color:#fff
+    style R fill:#22c55e,color:#fff
+```
+
+### Beginner dictionary
+
+| Term | What it means (no jargon) |
+|---|---|
+| **Model** | The "brain": a math function with millions of adjustable numbers (weights) that turns input into output. |
+| **Training** | Showing the model many examples and adjusting its weights until its guesses become good. |
+| **Dataset** | The collection of examples used for training. Data quality matters more than fancy algorithms. |
+| **Neural network** | A model built from layers of simple units. "Deep learning" just means many layers. |
+| **LLM** | A giant neural network trained on huge amounts of text to predict the next word. GPT and Claude are LLMs. |
+| **Token** | A piece of a word. LLMs read and write tokens, not letters. |
+| **Prompt** | The instruction you give an LLM. Writing good prompts is a real engineering skill. |
+| **Embedding** | Turning text into a list of numbers so a computer can measure "meaning similarity". |
+| **RAG** | Retrieval-Augmented Generation: letting an LLM look up YOUR documents before answering. |
+| **Agent** | An LLM in a loop that can use tools (search, code, APIs) to complete multi-step tasks. |
+| **Fine-tuning** | Taking a trained model and training it a little more on your own examples to specialize it. |
+| **Inference** | Using a trained model to get answers. Training = school; inference = the job. |
 
 ---
 
-## Phase 1 — Foundations: Python & Math for AI
+## How this roadmap works
+
+Three rules: **consistency beats intensity** · **build more than you watch** · **done beats perfect**.
+
+### Weekly rhythm
+
+```mermaid
+flowchart LR
+    Mon["<b>MON</b><br/>Watch / read<br/><i>New concept</i>"] --> Tue["<b>TUE</b><br/>Code along<br/><i>Reproduce it</i>"]
+    Tue --> Wed["<b>WED</b><br/>Watch / read<br/><i>Next concept</i>"]
+    Wed --> Thu["<b>THU</b><br/>Code along<br/><i>Exercises</i>"]
+    Thu --> Fri["<b>FRI</b><br/>Build & review<br/><i>Mini-project</i>"]
+    style Mon fill:#3b82f6,color:#fff
+    style Tue fill:#10b981,color:#fff
+    style Wed fill:#8b5cf6,color:#fff
+    style Thu fill:#f59e0b,color:#fff
+    style Fri fill:#22c55e,color:#fff
+```
+
+Weekends fully off.
+
+### The learning stack
+
+Each layer builds on the one below — do not skip levels.
+
+```mermaid
+flowchart BT
+    L1["🐍 <b>Python</b> • NumPy • Pandas • Math intuition"]
+    L2["📈 <b>Machine Learning</b> • scikit-learn • Evaluation"]
+    L3["🧠 <b>Deep Learning</b> • PyTorch • Neural networks"]
+    L4["💬 <b>LLMs</b> • Transformers • Prompting • Fine-tuning"]
+    L5["🔎 <b>RAG • Agents</b> • Vector DBs • Evals"]
+    L6["🚀 <b>Deployment</b> • APIs • Portfolio"]
+    L1 --> L2 --> L3 --> L4 --> L5 --> L6
+    style L1 fill:#3b82f6,color:#fff
+    style L2 fill:#10b981,color:#fff
+    style L3 fill:#8b5cf6,color:#fff
+    style L4 fill:#ec4899,color:#fff
+    style L5 fill:#f59e0b,color:#fff
+    style L6 fill:#22c55e,color:#fff
+```
+
+---
+
+## 🔵 Phase 1 — Foundations: Python & Math for AI
 **Weeks 1–4 · ~30–35 hours · Month 1**
 
 Goal: write Python confidently for data work (NumPy, Pandas, charts) and build visual intuition for the math behind AI.
@@ -47,7 +152,7 @@ Pick a Kaggle dataset. One polished notebook: load → clean → explore → vis
 
 ---
 
-## Phase 2 — Machine Learning Fundamentals
+## 🟢 Phase 2 — Machine Learning Fundamentals
 **Weeks 5–8 · ~32–36 hours · Month 2**
 
 Goal: understand how machines learn from data, train real models with scikit-learn, and evaluate them honestly.
@@ -72,10 +177,40 @@ Clean data, 2+ models compared, honest cross-validated evaluation, README explai
 
 ---
 
-## Phase 3 — Deep Learning & PyTorch
+## 🟣 Phase 3 — Deep Learning & PyTorch
 **Weeks 9–13 · ~40–45 hours · Month 3**
 
 Goal: understand neural networks deeply enough to build one from scratch, then use PyTorch fluently. **Type every line yourself.**
+
+Every LLM is a neural network like this — just enormously bigger:
+
+```mermaid
+flowchart LR
+    I1(("I₁")) --> H1(("H₁")) & H2(("H₂")) & H3(("H₃")) & H4(("H₄"))
+    I2(("I₂")) --> H1 & H2 & H3 & H4
+    I3(("I₃")) --> H1 & H2 & H3 & H4
+    H1 --> O1(("O₁"))
+    H2 --> O1
+    H3 --> O1
+    H4 --> O1
+    subgraph Input["INPUT<br/>(your data)"]
+      I1
+      I2
+      I3
+    end
+    subgraph Hidden["HIDDEN LAYERS<br/>(find patterns)"]
+      H1
+      H2
+      H3
+      H4
+    end
+    subgraph Output["OUTPUT<br/>(the answer)"]
+      O1
+    end
+    style Input fill:#dbeafe,stroke:#3b82f6
+    style Hidden fill:#ede9fe,stroke:#8b5cf6
+    style Output fill:#d1fae5,stroke:#10b981
+```
 
 | Wk | Topic | Resource | Complete this |
 |---|---|---|---|
@@ -98,7 +233,7 @@ Fine-tuned image classifier with demo GIF + character-level LM with sample gener
 
 ---
 
-## Phase 4 — LLMs & Transformers
+## 🌸 Phase 4 — LLMs & Transformers
 **Weeks 14–17 · ~32–36 hours · Month 4**
 
 Goal: understand how GPT-class models actually work (you will build one), then get fluent with the modern LLM toolbox.
@@ -123,13 +258,33 @@ Publish your trained mini-GPT + the tool-calling CLI assistant. LinkedIn post: *
 
 ---
 
-## Phase 5 — RAG, Agents & AI Engineering
+## 🟠 Phase 5 — RAG, Agents & AI Engineering
 **Weeks 18–22 · ~40–45 hours · Month 5**
 
 Goal: master the patterns companies hire for — RAG, agents, evaluation.
 
-```
-YOUR DOCS → SPLIT INTO CHUNKS → EMBED → VECTOR DB → RETRIEVE TOP MATCHES → LLM WRITES ANSWER
+### How RAG works
+
+> *Give the AI your documents so it answers from facts, not memory.*
+
+```mermaid
+flowchart LR
+    D["📄 YOUR<br/>DOCS"] --> C["✂️ SPLIT INTO<br/>CHUNKS"]
+    C --> E["🔢 EMBED<br/>(→ numbers)"]
+    E --> V[("🗄️ VECTOR<br/>DATABASE")]
+    Q["❓ User<br/>question"] --> QE["🔢 Embed<br/>question"]
+    QE --> R["🎯 RETRIEVE TOP<br/>MATCHES"]
+    V --> R
+    R --> L["💬 LLM WRITES<br/>ANSWER"]
+    Q --> L
+    style D fill:#dbeafe,stroke:#3b82f6,color:#1e3a8a
+    style C fill:#d1fae5,stroke:#10b981,color:#065f46
+    style E fill:#ede9fe,stroke:#8b5cf6,color:#5b21b6
+    style V fill:#fce7f3,stroke:#ec4899,color:#9d174d
+    style R fill:#fed7aa,stroke:#f59e0b,color:#9a3412
+    style L fill:#bbf7d0,stroke:#22c55e,color:#14532d
+    style Q fill:#fef3c7,stroke:#eab308,color:#713f12
+    style QE fill:#fef3c7,stroke:#eab308,color:#713f12
 ```
 
 | Wk | Topic | Resource | Complete this |
@@ -151,7 +306,7 @@ Document Q&A with citations, agent mode with tools, eval suite, clean UI (Next.j
 
 ---
 
-## Phase 6 — Deploy, Portfolio & Interview Prep
+## 🟩 Phase 6 — Deploy, Portfolio & Interview Prep
 **Weeks 23–26 · ~30–34 hours · Month 6**
 
 Goal: turn skills into evidence. Ship projects publicly, polish GitHub and resume, prep for AI Engineer / FDE interviews.
@@ -226,6 +381,7 @@ ai-journey/
 ├── phase-4-llms/
 ├── phase-5-rag-agents/
 ├── phase-6-deploy/
+├── roadmap.pdf
 └── README.md
 ```
 

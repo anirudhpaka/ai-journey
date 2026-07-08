@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 💬 Discussions
+    url: https://github.com/anirudhpaka/ai-journey/discussions
+    about: Ask "which path should I…", share your progress, or get unstuck.
+  - name: 📖 Roadmap PDF
+    url: https://github.com/anirudhpaka/ai-journey/blob/main/roadmap.pdf
+    about: The original source document this README is built from.

@@ -1,0 +1,54 @@
+name: 🐛 Broken link / dead resource
+description: A course, video, or tutorial linked in the roadmap is broken, paywalled, or gone.
+title: "[Broken] "
+labels: ["broken-link", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping keep the roadmap alive. The faster we know about a dead link, the faster the next learner isn't blocked.
+
+  - type: input
+    id: link
+    attributes:
+      label: Which link is broken?
+      description: Paste the exact URL from the README.
+      placeholder: "https://example.com/course-that-disappeared"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: phase
+    attributes:
+      label: Which phase / week?
+      options:
+        - Phase 1 — Foundations (Weeks 1–4)
+        - Phase 2 — Machine Learning (Weeks 5–8)
+        - Phase 3 — Deep Learning (Weeks 9–13)
+        - Phase 4 — LLMs (Weeks 14–17)
+        - Phase 5 — RAG & Agents (Weeks 18–22)
+        - Phase 6 — Deploy & Portfolio (Weeks 23–26)
+        - GitHub learning paths section
+        - Other
+    validations:
+      required: true
+
+  - type: dropdown
+    id: type
+    attributes:
+      label: What's wrong?
+      options:
+        - 404 / page gone
+        - Paywalled (was free, now paid)
+        - Content changed dramatically (no longer relevant)
+        - Slow / rate-limited
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: replacement
+    attributes:
+      label: Know a replacement? (optional)
+      description: If you already know a free, equivalent resource, drop the link and a one-line "why this is a good swap."
+      placeholder: "e.g., https://... covers the same material, still free, updated 2026"

@@ -1,0 +1,69 @@
+name: 💡 Resource suggestion
+description: You found a free resource that would meaningfully improve the roadmap.
+title: "[Resource] "
+labels: ["resource-suggestion", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Great resources are the lifeblood of this repo. Two ground rules:
+        - **Must be free** (or free-to-audit). No paywalled content.
+        - **Must be self-contained.** Full course > 5-minute promo video.
+
+  - type: input
+    id: link
+    attributes:
+      label: Link to the resource
+      placeholder: "https://..."
+    validations:
+      required: true
+
+  - type: dropdown
+    id: phase
+    attributes:
+      label: Which phase / week does this fit?
+      options:
+        - Phase 1 — Foundations (Weeks 1–4)
+        - Phase 2 — Machine Learning (Weeks 5–8)
+        - Phase 3 — Deep Learning (Weeks 9–13)
+        - Phase 4 — LLMs (Weeks 14–17)
+        - Phase 5 — RAG & Agents (Weeks 18–22)
+        - Phase 6 — Deploy & Portfolio (Weeks 23–26)
+        - Cross-cutting / reference
+    validations:
+      required: true
+
+  - type: dropdown
+    id: format
+    attributes:
+      label: Format
+      options:
+        - Video / video series
+        - Interactive course (browser)
+        - Written tutorial / book chapter
+        - GitHub curriculum with exercises
+        - Documentation
+        - Cheat sheet / reference
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: pitch
+    attributes:
+      label: Why is this better than what's currently linked?
+      description: Be specific. "Explains X with animations", "runs in the browser so no setup", "shorter and denser than Y" — that kind of thing.
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Confirm
+      options:
+        - label: This resource is free (or free-to-audit)
+          required: true
+        - label: I have completed at least the first module myself
+          required: true
+        - label: This is not my own paid product / affiliate link
+          required: true

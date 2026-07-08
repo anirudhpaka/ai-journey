@@ -1,4 +1,4 @@
-# 🟩 Phase 6 — Deploy, Portfolio & Interview Prep
+# 🟩 Phase 6. Deploy, Portfolio & Interview Prep
 
 **Weeks 23–26 · ~30–34 hours · Month 6**
 
@@ -21,23 +21,23 @@ phase-6-deploy/
 └── graduation/               # 🎓 The Job-Ready Package
 ```
 
-## Milestone project — 🎓 The Job-Ready Package
+## Milestone project. 🎓 The Job-Ready Package
 
 By end of Week 26:
 
-- **3 deployed projects with public URLs** — the flagship RAG app + 2 more (image classifier, mini-GPT)
-- **A GitHub that tells a 6-month story** — clear README arc, pinned repos, commit history that shows steady progress
-- **2 technical posts** — LinkedIn or Dev.to. One "here's how I built the flagship." One "here's what I learned about [attention / RAG / evals]."
-- **An AI-focused resume** — highlight the projects, not the courses
-- **Practiced interview answers** — 20 questions answered aloud, 2 mock interviews
+- **3 deployed projects with public URLs**: the flagship RAG app + 2 more (image classifier, mini-GPT)
+- **A GitHub that tells a 6-month story**: clear README arc, pinned repos, commit history that shows steady progress
+- **2 technical posts**: LinkedIn or Dev.to. One "here's how I built the flagship." One "here's what I learned about [attention / RAG / evals]."
+- **An AI-focused resume**: highlight the projects, not the courses
+- **Practiced interview answers**: 20 questions answered aloud, 2 mock interviews
 
 That is not "learning AI." That is **being an AI engineer.**
 
 ## Deploy checklist (per project)
 
 - [ ] Public URL that works on mobile
-- [ ] Loading states — never a blank screen
-- [ ] Error handling — user sees "something went wrong" not a stack trace
+- [ ] Loading states: never a blank screen
+- [ ] Error handling: user sees "something went wrong" not a stack trace
 - [ ] Rate limit or auth so a stranger can't drain your API credits
 - [ ] README with: what it is, a demo GIF, architecture diagram, how to run locally, tech stack
 - [ ] Environment variables in `.env.example`, secrets in the host's secret manager
@@ -45,19 +45,19 @@ That is not "learning AI." That is **being an AI engineer.**
 ## Resume format that works for AI Engineer / FDE roles
 
 ```
-[Name] — AI Engineer
+[Name] · AI Engineer
 [email] · [github.com/you] · [linkedin] · [portfolio URL]
 
 PROJECTS  (put these ABOVE experience if you're career-switching)
 
-▸ [Flagship RAG App Name] — flagship LLM app with citations, agent tools, eval suite
+▸ [Flagship RAG App Name] · flagship LLM app with citations, agent tools, eval suite
   • Built RAG pipeline (Chroma, hybrid search, reranking) that improved
     faithfulness from 62% to 91% on a 40-question golden set.
   • Deployed as FastAPI + Next.js on Vercel + HF Spaces. Handles ~200 QPD.
   • [URL] · [GitHub]
 
-▸ [Second project] — ...
-▸ [Third project] — ...
+▸ [Second project] · ...
+▸ [Third project] · ...
 
 EXPERIENCE  (recent, senior work first)
 ...
@@ -69,7 +69,7 @@ EDUCATION  (short)
 
 **ML fundamentals**
 - Explain bias / variance tradeoff
-- Precision vs recall — when to prefer each
+- Precision vs recall: when to prefer each
 - Why do we split into train/val/test?
 - What is regularization and why does it work?
 
@@ -80,7 +80,7 @@ EDUCATION  (short)
 - How would you build an agent that [does X]?
 
 **Behavioral**
-- Walk me through a project — start with the problem, not the tech
+- Walk me through a project. Start with the problem, not the tech.
 - What went wrong on a project and what did you learn?
 - Why AI Engineer / why now?
 

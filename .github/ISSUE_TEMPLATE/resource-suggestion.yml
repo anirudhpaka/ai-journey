@@ -23,12 +23,12 @@ body:
     attributes:
       label: Which phase / week does this fit?
       options:
-        - Phase 1 — Foundations (Weeks 1–4)
-        - Phase 2 — Machine Learning (Weeks 5–8)
-        - Phase 3 — Deep Learning (Weeks 9–13)
-        - Phase 4 — LLMs (Weeks 14–17)
-        - Phase 5 — RAG & Agents (Weeks 18–22)
-        - Phase 6 — Deploy & Portfolio (Weeks 23–26)
+        - Phase 1: Foundations (Weeks 1–4)
+        - Phase 2: Machine Learning (Weeks 5–8)
+        - Phase 3: Deep Learning (Weeks 9–13)
+        - Phase 4: LLMs (Weeks 14–17)
+        - Phase 5: RAG & Agents (Weeks 18–22)
+        - Phase 6: Deploy & Portfolio (Weeks 23–26)
         - Cross-cutting / reference
     validations:
       required: true
@@ -52,7 +52,7 @@ body:
     id: pitch
     attributes:
       label: Why is this better than what's currently linked?
-      description: Be specific. "Explains X with animations", "runs in the browser so no setup", "shorter and denser than Y" — that kind of thing.
+      description: Be specific. "Explains X with animations", "runs in the browser so no setup", "shorter and denser than Y". That kind of thing.
     validations:
       required: true
 

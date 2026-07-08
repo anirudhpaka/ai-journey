@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 500" width="600" height="500" role="img" aria-label="Training loop animation">
+  <defs>
+    <radialGradient id="bg2" cx="0.5" cy="0.5" r="0.6">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </radialGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="600" height="500" fill="url(#bg2)"/>
+
+  <text x="300" y="40" text-anchor="middle" font-family="ui-sans-serif, system-ui" font-size="22" font-weight="800" fill="#f8fafc">The Training Loop</text>
+  <text x="300" y="65" text-anchor="middle" font-family="ui-sans-serif, system-ui" font-size="13" fill="#94a3b8">this cycle IS machine learning</text>
+
+  <circle cx="300" cy="280" r="150" fill="none" stroke="#334155" stroke-width="2" stroke-dasharray="4 6"/>
+
+  <g>
+    <circle cx="300" cy="130" r="42" fill="#3b82f6">
+      <animate attributeName="r" values="42;54;42" keyTimes="0;0.1;0.3" dur="5s" begin="0s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.6;1;0.6" keyTimes="0;0.1;0.3" dur="5s" begin="0s" repeatCount="indefinite"/>
+    </circle>
+    <text x="300" y="125" text-anchor="middle" font-family="ui-sans-serif, system-ui" font-size="12" font-weight="700" fill="#fff">1. DATA</text>
+    <text x="300" y="142" text-anchor="middle" font-family="ui-sans-serif, system-ui" font-size="10" fill="#dbeafe">examples</text>
+  </g>
+
+  <g>
+    <circle cx="442" cy="222" r="42" fill="#10b981">
+      <animate attributeName="r" values="42;54;42" keyTimes="0;0.1;0.3" dur="5s" begin="1s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.6;1;0.6" keyTimes="0;0.1;0.3" dur="5s" begin="1s" repeatCount="indefinite"/>
+    </circle>
+    <text x="442" y="217" text-anchor="middle" font-family="ui-sans-serif, system-ui" font-size="12" font-weight="700" fill="#fff">2. GUESS</text>
+    <text x="442" y="234" text-anchor="middle" font-family="ui-sans-serif, system-ui" font-size="10" fill="#d1fae5">prediction</text>
+  </g>
+
+  <g>
+    <circle cx="388" cy="390" r="42" fill="#8b5cf6">
+      <animate attributeName="r" values="42;54;42" keyTimes="0;0.1;0.3" dur="5s" begin="2s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.6;1;0.6" keyTimes="0;0.1;0.3" dur="5s" begin="2s" repeatCount="indefinite"/>
+    </circle>
+    <text x="388" y="385" text-anchor="middle" font-family="ui-sans-serif, system-ui" font-size="12" font-weight="700" fill="#fff">3. MEASURE</text>
+    <text x="388" y="402" text-anchor="middle" font-family="ui-sans-serif, system-ui" font-size="10" fill="#ede9fe">loss</text>
+  </g>
+
+  <g>
+    <circle cx="212" cy="390" r="42" fill="#f59e0b">
+      <animate attributeName="r" values="42;54;42" keyTimes="0;0.1;0.3" dur="5s" begin="3s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.6;1;0.6" keyTimes="0;0.1;0.3" dur="5s" begin="3s" repeatCount="indefinite"/>
+    </circle>
+    <text x="212" y="385" text-anchor="middle" font-family="ui-sans-serif, system-ui" font-size="12" font-weight="700" fill="#fff">4. ADJUST</text>
+    <text x="212" y="402" text-anchor="middle" font-family="ui-sans-serif, system-ui" font-size="10" fill="#fef3c7">weights</text>
+  </g>
+
+  <g>
+    <circle cx="158" cy="222" r="42" fill="#22c55e">
+      <animate attributeName="r" values="42;54;42" keyTimes="0;0.1;0.3" dur="5s" begin="4s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.6;1;0.6" keyTimes="0;0.1;0.3" dur="5s" begin="4s" repeatCount="indefinite"/>
+    </circle>
+    <text x="158" y="217" text-anchor="middle" font-family="ui-sans-serif, system-ui" font-size="12" font-weight="700" fill="#fff">5. REPEAT</text>
+    <text x="158" y="234" text-anchor="middle" font-family="ui-sans-serif, system-ui" font-size="10" fill="#dcfce7">thousands</text>
+  </g>
+
+  <g fill="#f8fafc" filter="url(#glow)">
+    <circle r="8" fill="#facc15">
+      <animateMotion dur="5s" repeatCount="indefinite" rotate="auto">
+        <mpath href="#orbit"/>
+      </animateMotion>
+    </circle>
+  </g>
+  <path id="orbit" d="M 300 130 A 150 150 0 1 1 299 130" fill="none" stroke="none"/>
+
+  <text x="300" y="475" text-anchor="middle" font-family="ui-sans-serif, system-ui" font-size="12" fill="#64748b" font-style="italic">every model, from linear regression to GPT, learns this way</text>
+</svg>

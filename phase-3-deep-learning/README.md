@@ -1,4 +1,4 @@
-# 🟣 Phase 3 — Deep Learning & PyTorch
+# 🟣 Phase 3. Deep Learning & PyTorch
 
 **Weeks 9–13 · ~40–45 hours · Month 3**
 
@@ -22,12 +22,12 @@ phase-3-deep-learning/
 └── milestone-classifier-lm/  # 🎯 Image Classifier + Tiny Language Model
 ```
 
-## Milestone project — Image Classifier + Tiny Language Model
+## Milestone project. Image Classifier + Tiny Language Model
 
 Two deliverables, one folder:
 
-1. **Fine-tuned image classifier** — pick a domain (dog breeds, plant diseases, architectural styles). Include a demo GIF in the README. Report accuracy honestly with a confusion matrix.
-2. **Character-level LM** — train `makemore` on a corpus you find funny (band names, D&D monsters, pizza toppings). Ship 20 sample generations in the README.
+1. **Fine-tuned image classifier**: pick a domain (dog breeds, plant diseases, architectural styles). Include a demo GIF in the README. Report accuracy honestly with a confusion matrix.
+2. **Character-level LM**: train `makemore` on a corpus you find funny (band names, D&D monsters, pizza toppings). Ship 20 sample generations in the README.
 
 After this month you can truthfully say: **"I built neural networks from scratch."**
 
@@ -40,8 +40,8 @@ After this month you can truthfully say: **"I built neural networks from scratch
 
 ## Getting a free GPU
 
-- **Google Colab** — free T4 GPU, ~12 hrs/day. Runtime → Change runtime type → GPU.
-- **Kaggle Notebooks** — free P100 GPU, 30 hrs/week. Slightly faster than Colab.
-- **Lightning AI Studios** — free tier with GPU-hours if you want a persistent environment.
+- **Google Colab**: free T4 GPU, ~12 hrs/day. Runtime → Change runtime type → GPU.
+- **Kaggle Notebooks**: free P100 GPU, 30 hrs/week. Slightly faster than Colab.
+- **Lightning AI Studios**: free tier with GPU-hours if you want a persistent environment.
 
 Do not buy a GPU this month. You don't need one.

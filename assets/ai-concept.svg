@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500" role="img" aria-label="AI concept: nested circles from AI to LLMs">
+  <defs>
+    <radialGradient id="cbg" cx="0.5" cy="0.5" r="0.7">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="800" height="500" fill="url(#cbg)"/>
+
+  <text x="400" y="40" text-anchor="middle" font-family="ui-sans-serif, system-ui" font-size="20" font-weight="800" fill="#f8fafc">Circles Inside Circles</text>
+  <text x="400" y="62" text-anchor="middle" font-family="ui-sans-serif, system-ui" font-size="13" fill="#94a3b8">AI, ML, Deep Learning, and LLMs are NOT the same thing</text>
+
+  <g>
+    <circle cx="400" cy="290" r="180" fill="#3b82f6" fill-opacity="0.15" stroke="#3b82f6" stroke-width="2">
+      <animate attributeName="stroke-opacity" values="0.6;1;0.6" dur="4s" repeatCount="indefinite"/>
+    </circle>
+    <text x="400" y="130" text-anchor="middle" font-family="ui-sans-serif, system-ui" font-size="15" font-weight="800" fill="#93c5fd">ARTIFICIAL INTELLIGENCE</text>
+    <text x="400" y="150" text-anchor="middle" font-family="ui-sans-serif, system-ui" font-size="12" fill="#60a5fa" font-style="italic">machines doing smart things</text>
+  </g>
+
+  <g>
+    <circle cx="400" cy="310" r="140" fill="#10b981" fill-opacity="0.15" stroke="#10b981" stroke-width="2">
+      <animate attributeName="stroke-opacity" values="0.6;1;0.6" dur="4s" begin="1s" repeatCount="indefinite"/>
+    </circle>
+    <text x="400" y="190" text-anchor="middle" font-family="ui-sans-serif, system-ui" font-size="14" font-weight="800" fill="#6ee7b7">MACHINE LEARNING</text>
+    <text x="400" y="207" text-anchor="middle" font-family="ui-sans-serif, system-ui" font-size="11" fill="#34d399" font-style="italic">learning rules from data</text>
+  </g>
+
+  <g>
+    <circle cx="400" cy="330" r="100" fill="#8b5cf6" fill-opacity="0.15" stroke="#8b5cf6" stroke-width="2">
+      <animate attributeName="stroke-opacity" values="0.6;1;0.6" dur="4s" begin="2s" repeatCount="indefinite"/>
+    </circle>
+    <text x="400" y="255" text-anchor="middle" font-family="ui-sans-serif, system-ui" font-size="13" font-weight="800" fill="#c4b5fd">DEEP LEARNING</text>
+    <text x="400" y="270" text-anchor="middle" font-family="ui-sans-serif, system-ui" font-size="11" fill="#a78bfa" font-style="italic">neural networks</text>
+  </g>
+
+  <g>
+    <circle cx="400" cy="350" r="55" fill="#ec4899" fill-opacity="0.3" stroke="#ec4899" stroke-width="2">
+      <animate attributeName="stroke-opacity" values="0.7;1;0.7" dur="4s" begin="3s" repeatCount="indefinite"/>
+      <animate attributeName="fill-opacity" values="0.3;0.5;0.3" dur="4s" begin="3s" repeatCount="indefinite"/>
+    </circle>
+    <text x="400" y="345" text-anchor="middle" font-family="ui-sans-serif, system-ui" font-size="14" font-weight="800" fill="#fff">GEN AI</text>
+    <text x="400" y="363" text-anchor="middle" font-family="ui-sans-serif, system-ui" font-size="11" fill="#fbcfe8" font-style="italic">LLMs, images</text>
+  </g>
+
+  <g fill="#f8fafc">
+    <text x="400" y="486" text-anchor="middle" font-family="ui-sans-serif, system-ui" font-size="11" fill="#64748b">GPT and Claude live in the pink circle. That's a small dot inside a much bigger field.</text>
+  </g>
+</svg>

@@ -1,4 +1,4 @@
-# 🔵 Phase 1 — Foundations: Python & Math for AI
+# 🔵 Phase 1. Foundations: Python & Math for AI
 
 **Weeks 1–4 · ~30–35 hours · Month 1**
 
@@ -17,15 +17,15 @@ phase-1-foundations/
 └── milestone-data-explorer/  # 🎯 The Data Explorer Notebook
 ```
 
-## Milestone project — Data Explorer Notebook
+## Milestone project. Data Explorer Notebook
 
 Pick a Kaggle dataset that genuinely interests you. Deliver one polished notebook:
 
-1. **Load** — read the CSV, show shape and dtypes
-2. **Clean** — handle missing values, fix types, document choices
-3. **Explore** — 10 questions answered with Pandas groupby / filter
-4. **Visualize** — 5 charts (Matplotlib), each with a caption
-5. **Insight** — 5 findings in plain English, ranked by "surprise"
+1. **Load**: read the CSV, show shape and dtypes
+2. **Clean**: handle missing values, fix types, document choices
+3. **Explore**: 10 questions answered with Pandas groupby / filter
+4. **Visualize**: 5 charts (Matplotlib), each with a caption
+5. **Insight**: 5 findings in plain English, ranked by "surprise"
 
 Push it. Update the notebook's markdown intro so a stranger opening it in 30 seconds knows what it does.
 
@@ -38,6 +38,6 @@ Push it. Update the notebook's markdown intro so a stranger opening it in 30 sec
 
 ## Stuck?
 
-- [Kaggle Learn Python](https://kaggle.com/learn/python) exercises auto-check your code — start there
+- [Kaggle Learn Python](https://kaggle.com/learn/python) exercises auto-check your code. Start there.
 - [W3Schools Python](https://w3schools.com/python) has Try-It-Yourself editors for gentler on-ramps
 - 3Blue1Brown videos benefit from 2× re-watches at 0.75x speed

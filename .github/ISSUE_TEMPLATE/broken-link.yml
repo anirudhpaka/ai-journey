@@ -22,12 +22,12 @@ body:
     attributes:
       label: Which phase / week?
       options:
-        - Phase 1 — Foundations (Weeks 1–4)
-        - Phase 2 — Machine Learning (Weeks 5–8)
-        - Phase 3 — Deep Learning (Weeks 9–13)
-        - Phase 4 — LLMs (Weeks 14–17)
-        - Phase 5 — RAG & Agents (Weeks 18–22)
-        - Phase 6 — Deploy & Portfolio (Weeks 23–26)
+        - Phase 1: Foundations (Weeks 1–4)
+        - Phase 2: Machine Learning (Weeks 5–8)
+        - Phase 3: Deep Learning (Weeks 9–13)
+        - Phase 4: LLMs (Weeks 14–17)
+        - Phase 5: RAG & Agents (Weeks 18–22)
+        - Phase 6: Deploy & Portfolio (Weeks 23–26)
         - GitHub learning paths section
         - Other
     validations:

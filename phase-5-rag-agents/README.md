@@ -1,4 +1,4 @@
-# 🟠 Phase 5 — RAG, Agents & AI Engineering
+# 🟠 Phase 5. RAG, Agents & AI Engineering
 
 **Weeks 18–22 · ~40–45 hours · Month 5**
 
@@ -20,14 +20,14 @@ phase-5-rag-agents/
 └── milestone-rag-agent-app/  # 🎯 Flagship RAG + Agent App
 ```
 
-## Milestone project — Production-Style RAG + Agent App (flagship)
+## Milestone project. Production-Style RAG + Agent App (flagship)
 
 **This is the #1 interview project.** One serious application with:
 
 1. **Document Q&A** with citations that link back to the source chunk
 2. **Agent mode** with 2+ tools (retrieval, web search, calculator, code exec)
-3. **Eval suite** — at least 10 curated Q&A pairs, scored on faithfulness and relevance, with a CI-style regression report
-4. **Clean UI** — Next.js if you know React, Streamlit / Gradio if you don't. Deploy it.
+3. **Eval suite**: at least 10 curated Q&A pairs, scored on faithfulness and relevance, with a CI-style regression report
+4. **Clean UI**. Next.js if you know React, Streamlit / Gradio if you don't. Deploy it.
 
 Pick a domain you can talk about for 10 minutes without notes. Some ideas:
 - Chat with your own PDFs / notes (personal knowledge base)
@@ -44,9 +44,9 @@ Pick a domain you can talk about for 10 minutes without notes. Some ideas:
 
 ## The 3 reasons RAG answers wrongly (memorize these)
 
-1. **Retrieval failed** — the right chunk wasn't in the top-K. Fix: better chunking, hybrid search (dense + BM25), reranking.
-2. **Retrieval succeeded but the model ignored it** — the LLM hallucinated over the context. Fix: stronger system prompt ("answer only from the context; say I don't know otherwise"), smaller context window, citations required.
-3. **The docs themselves were wrong or ambiguous** — garbage in, garbage out. Fix: metadata filters, source freshness scoring, deduplication.
+1. **Retrieval failed**: the right chunk wasn't in the top-K. Fix: better chunking, hybrid search (dense + BM25), reranking.
+2. **Retrieval succeeded but the model ignored it**: the LLM hallucinated over the context. Fix: stronger system prompt ("answer only from the context; say I don't know otherwise"), smaller context window, citations required.
+3. **The docs themselves were wrong or ambiguous**: garbage in, garbage out. Fix: metadata filters, source freshness scoring, deduplication.
 
 ## Evals are not optional
 
